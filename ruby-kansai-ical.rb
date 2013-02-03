@@ -20,6 +20,46 @@ vtimezone_component.add(standard_component)
 cal = Icalendar::Calendar.new
 
 cal.event do
+  dtstart       DateTime.new(2013, 2, 2, 13), {'TZID' => 'Asia/Tokyo'}
+  dtend         DateTime.new(2013, 2, 2, 17), {'TZID' => 'Asia/Tokyo'}
+  summary       "Ruby/Rails勉強会@関西 第56回"
+  description   "Ruby関西が主催する勉強会です。http://jp.rubyist.net/?KansaiWorkshop56"
+  klass         "Public"
+end
+
+cal.event do
+  dtstart       DateTime.new(2012, 7, 21, 13), {'TZID' => 'Asia/Tokyo'}
+  dtend         DateTime.new(2012, 7, 21, 17), {'TZID' => 'Asia/Tokyo'}
+  summary       "Ruby/Rails勉強会@関西 第55回"
+  description   "Ruby関西が主催する勉強会です。http://jp.rubyist.net/?KansaiWorkshop55"
+  klass         "Public"
+end
+
+cal.event do
+  dtstart       DateTime.new(2012, 5, 26, 13), {'TZID' => 'Asia/Tokyo'}
+  dtend         DateTime.new(2012, 5, 26, 17), {'TZID' => 'Asia/Tokyo'}
+  summary       "Ruby/Rails勉強会@関西 第54回"
+  description   "Ruby関西が主催する勉強会です。http://jp.rubyist.net/?KansaiWorkshop54"
+  klass         "Public"
+end
+
+cal.event do
+  dtstart       DateTime.new(2012, 1, 28, 13), {'TZID' => 'Asia/Tokyo'}
+  dtend         DateTime.new(2012, 1, 28, 17), {'TZID' => 'Asia/Tokyo'}
+  summary       "Ruby/Rails勉強会@関西 第53回"
+  description   "Ruby関西が主催する勉強会です。http://jp.rubyist.net/?KansaiWorkshop53"
+  klass         "Public"
+end
+
+cal.event do
+  dtstart       DateTime.new(2011, 12, 3, 13), {'TZID' => 'Asia/Tokyo'}
+  dtend         DateTime.new(2011, 12, 3, 17), {'TZID' => 'Asia/Tokyo'}
+  summary       "Ruby/Rails勉強会@関西 第52回"
+  description   "Ruby関西が主催する勉強会です。http://jp.rubyist.net/?KansaiWorkshop52"
+  klass         "Public"
+end
+
+cal.event do
   dtstart       DateTime.new(2011, 11, 11, 13), {'TZID' => 'Asia/Tokyo'}
   dtend         DateTime.new(2011, 11, 12, 18), {'TZID' => 'Asia/Tokyo'}
   summary       "関西Ruby会議04"
